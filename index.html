@@ -17,12 +17,18 @@
 <meta property="og:url" content="https://cirkitree.xyz/">
 <meta property="og:site_name" content="Cirkitree">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cirkitree.xyz/images/bonnie-remeika-aether-command-globe.jpg">
+<meta property="og:image:width" content="1441">
+<meta property="og:image:height" content="837">
+<meta property="og:image:alt" content="AETHER_COMMAND by Bonnie Caroline Remeika: 14,753 ancient DNA samples as glowing nodes on an interactive globe.">
 <meta property="profile:first_name" content="Bonnie">
 <meta property="profile:last_name" content="Remeika">
 
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Bonnie Caroline Remeika — Index">
 <meta name="twitter:description" content="Independent practice in Ravenna, Ohio. Platforms, character IP, brand systems, interaction patents.">
+<meta name="twitter:image" content="https://cirkitree.xyz/images/bonnie-remeika-aether-command-globe.jpg">
+<meta name="twitter:image:alt" content="AETHER_COMMAND by Bonnie Caroline Remeika: 14,753 ancient DNA samples as glowing nodes on an interactive globe.">
 
 <script type="application/ld+json">
 {
@@ -33,7 +39,13 @@
       "@id": "https://cirkitree.xyz/#page",
       "url": "https://cirkitree.xyz/",
       "name": "Bonnie Caroline Remeika — Index",
-      "mainEntity": { "@id": "https://rmk.systems/#bonnie-remeika" }
+      "mainEntity": { "@id": "https://rmk.systems/#bonnie-remeika" },
+      "primaryImageOfPage": { "@id": "https://cirkitree.xyz/#img-globe" },
+      "image": [
+        { "@id": "https://cirkitree.xyz/#img-globe" },
+        { "@id": "https://cirkitree.xyz/#img-flashlight" },
+        { "@id": "https://cirkitree.xyz/#img-entry" }
+      ]
     },
     {
       "@type": "Person",
@@ -80,6 +92,39 @@
         "addressRegion": "OH",
         "addressCountry": "US"
       }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://cirkitree.xyz/#img-globe",
+      "contentUrl": "https://cirkitree.xyz/images/bonnie-remeika-aether-command-globe.jpg",
+      "width": 1441,
+      "height": 837,
+      "caption": "AETHER_COMMAND globe: 14,753 ancient DNA samples, filtered by a time scrubber",
+      "creator": { "@id": "https://rmk.systems/#bonnie-remeika" },
+      "creditText": "Bonnie Caroline Remeika",
+      "copyrightNotice": "© 2026 Bonnie Caroline Remeika"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://cirkitree.xyz/#img-flashlight",
+      "contentUrl": "https://cirkitree.xyz/images/bonnie-remeika-aether-command-flashlight.jpg",
+      "width": 1440,
+      "height": 843,
+      "caption": "AETHER_COMMAND flashlight mode: lit areas reveal ancient DNA samples around the Black Sea and the Levant",
+      "creator": { "@id": "https://rmk.systems/#bonnie-remeika" },
+      "creditText": "Bonnie Caroline Remeika",
+      "copyrightNotice": "© 2026 Bonnie Caroline Remeika"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://cirkitree.xyz/#img-entry",
+      "contentUrl": "https://cirkitree.xyz/images/bonnie-remeika-ghost-crown-entry-screen.jpg",
+      "width": 1440,
+      "height": 833,
+      "caption": "Ghost Crown entry screen for AETHER_COMMAND",
+      "creator": { "@id": "https://rmk.systems/#bonnie-remeika" },
+      "creditText": "Bonnie Caroline Remeika",
+      "copyrightNotice": "© 2026 Bonnie Caroline Remeika"
     }
   ]
 }
@@ -221,6 +266,11 @@
   <article id="aether-command">
     <h3>AETHER_COMMAND</h3>
     <p class="meta">Full-stack platform · Next.js, Mapbox GL, deck.gl · sole builder, two years</p>
+    <figure class="shot">
+      <img src="/images/bonnie-remeika-aether-command-globe.jpg" width="1441" height="837"
+        alt="AETHER_COMMAND globe by Bonnie Caroline Remeika: 14,753 ancient DNA samples as colored nodes over the night side of the Earth, with trade-route arcs, a command sidebar and a time scrubber.">
+      <figcaption>The globe with 14,753 ancient DNA samples in view, filtered by the time scrubber along the bottom.</figcaption>
+    </figure>
     <p>
       Interactive globe and narrative engine built on the AADR dataset of roughly 14,000 ancient
       genome samples, cross-referenced against artifact and isotopic data. Chaptered narrative
@@ -232,6 +282,16 @@
       interface live: moves the map, highlights regions and generates charts in response to spoken
       questions.
     </p>
+    <figure class="shot">
+      <img src="/images/bonnie-remeika-aether-command-flashlight.jpg" width="1440" height="843" loading="lazy"
+        alt="AETHER_COMMAND flashlight mode: the globe dimmed except two lit circles revealing clusters of ancient DNA samples around the Black Sea and the Levant, with a flash search panel in the sidebar.">
+      <figcaption>Flashlight mode: clicked areas stay lit and reveal every sample inside them, regardless of active filters.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="/images/bonnie-remeika-ghost-crown-entry-screen.jpg" width="1440" height="833" loading="lazy"
+        alt="Ghost Crown entry screen for AETHER_COMMAND: the Ghost Crown wordmark, a quote in English and Lithuanian over a blurred golden crown, and a sign-in panel.">
+      <figcaption>The Ghost Crown entry screen.</figcaption>
+    </figure>
     <p class="links"><a href="https://rmk.systems">Case study</a></p>
   </article>
 
@@ -364,7 +424,7 @@
 </main>
 
 <footer>
-  <p>Bonnie Caroline Remeika · RMK Systems · Ravenna, Ohio · Last updated <time datetime="2026-09-17">September 2026</time></p>
+  <p>Bonnie Caroline Remeika · RMK Systems · Ravenna, Ohio · Last updated <time datetime="2026-09-28">September 2026</time></p>
 </footer>
 
 </body>

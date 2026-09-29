@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;display=swap">
+<style>
+body { margin: 0; font-family: 'JetBrains Mono', ui-monospace, monospace; }
+a { color: #C1743E; } a:hover { color: #A85F2C; }
+</style>
+</helmet>
+<div style="width: 880px; height: 560px; box-sizing: border-box; background: #101315; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 44px; padding: 64px;">
+
+  <div style="display: flex; align-items: center; gap: 40px;">
+    <svg width="140" height="168" viewBox="0 0 80 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g stroke="#F4F2EC" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 76V48"></path>
+        <path d="M40 48V16"></path>
+        <path d="M40 48L8 16"></path>
+        <path d="M40 48L72 16"></path>
+      </g>
+      <rect x="30" y="76" width="20" height="20" rx="4" fill="#F4F2EC"></rect>
+      <circle cx="8" cy="8" r="8" fill="{{accent}}"></circle>
+      <circle cx="40" cy="8" r="8" fill="{{accent}}"></circle>
+      <circle cx="72" cy="8" r="8" fill="{{accent}}"></circle>
+    </svg>
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <div style="font-size: 60px; font-weight: 800; line-height: 1; color: #F4F2EC; letter-spacing: -0.02em;">CIRKITREE<span style="color: {{accent}};">.XYZ</span></div>
+      <div style="font-size: 14px; font-weight: 500; letter-spacing: 0.36em; color: #8A9299;">ENTITY INDEX</div>
+    </div>
+  </div>
+
+  <div style="width: 320px; height: 1px; background: #2A2F33;"></div>
+
+  <div style="font-size: 13px; font-weight: 400; letter-spacing: 0.18em; color: #8A9299;">BONNIE CAROLINE REMEIKA · RAVENNA, OHIO</div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"accent":{"editor":"color","default":"#C1743E","options":["#C1743E","#F4F2EC","#8A9299","#5E8C6A"]},"$preview":{"width":880,"height":560}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#C1743E' };
+  }
+}
+</script>
+</body>
+</html>
